@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Profix Innovation
 
-## Getting Started
+Phase 1 foundation for the Profix Innovation property-services website.
 
-First, run the development server:
+## Stack
+
+- Next.js (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+- `src/app` — routes, metadata, global styles, loading/error states
+- `src/components` — shared layout, UI and page sections
+- `src/data` — central business configuration and service hierarchy
+- `src/lib` — metadata helper and shared utilities
+- `src/types` — domain types for configuration, navigation, FAQs and services
 
-To learn more about Next.js, take a look at the following resources:
+## Business configuration
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Update `src/data/site.ts` for business information, contact details and navigation. Update `src/data/services.ts` for top-level services and future sub-services. The homepage and service routes both read from the service data, so categories are not duplicated in components.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Future phases
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Later phases will add individual service and sub-service pages, quote/contact forms, commercial and service-area content, FAQs, advice/blog content, SEO schema, analytics, and production integrations.
