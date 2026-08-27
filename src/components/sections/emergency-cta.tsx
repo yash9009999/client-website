@@ -1,0 +1,4 @@
+import { AlertCircle } from "lucide-react";
+import { Container } from "@/components/layout/container";
+import { ButtonLink } from "@/components/ui/button-link";
+export function EmergencyCTA() { return <section className="bg-primary py-14 text-primary-foreground sm:py-16"><Container className="flex flex-col gap-7 sm:flex-row sm:items-center sm:justify-between"><div className="max-w-2xl"><div className="flex items-center gap-3 text-sky-100"><AlertCircle aria-hidden="true" className="size-5" /><p className="text-sm font-bold uppercase tracking-[.16em]">Urgent property issue</p></div><h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Need Help With an Urgent Property Issue?</h2><p className="mt-3 text-sky-100">Tell us what you need and we&apos;ll help you find the right service.</p></div><ButtonLink href="/request-a-quote" size="large" className="bg-white text-primary hover:bg-sky-50">Request a Quote</ButtonLink></Container></section>; }

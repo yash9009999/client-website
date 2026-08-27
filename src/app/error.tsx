@@ -1,0 +1,2 @@
+"use client";
+export default function Error({ reset }: { error: Error & { digest?: string }; reset: () => void }) { return <div className="mx-auto max-w-2xl px-5 py-24 text-center"><h1 className="text-3xl font-bold">Something went wrong</h1><p className="mt-4 text-muted-foreground">Please try again. If the problem continues, contact us by email.</p><button type="button" onClick={reset} className="mt-7 rounded-md bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground">Try again</button></div>; }

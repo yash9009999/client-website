@@ -1,6 +1,6 @@
 # Profix Innovation
 
-Phase 1 foundation for the Profix Innovation property-services website.
+Profix Innovation property-services website built with Next.js.
 
 ## Stack
 
@@ -35,6 +35,14 @@ npm run start
 
 Update `src/data/site.ts` for business information, contact details and navigation. Update `src/data/services.ts` for top-level services and future sub-services. The homepage and service routes both read from the service data, so categories are not duplicated in components.
 
-## Future phases
+## Enquiry email configuration
 
-Later phases will add individual service and sub-service pages, quote/contact forms, commercial and service-area content, FAQs, advice/blog content, SEO schema, analytics, and production integrations.
+Copy `.env.example` to `.env.local` for local configuration. Production deployments require a Resend API key and a verified sender address:
+
+```env
+RESEND_API_KEY=
+CONTACT_EMAIL=info@profixinnovation.co.uk
+EMAIL_FROM=
+```
+
+The quote and contact forms fail safely when email delivery is not configured.

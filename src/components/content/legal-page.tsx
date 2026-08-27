@@ -1,0 +1,5 @@
+import type { ReactNode } from "react";
+import { Container } from "@/components/layout/container";
+
+export function LegalPage({ title, intro, children }: { title: string; intro: string; children: ReactNode }) { return <><section className="bg-primary-dark py-12 text-white sm:py-16"><Container className="max-w-4xl"><p className="eyebrow text-accent">Profix Innovation</p><h1 className="mt-4 text-4xl font-bold tracking-tight sm:text-5xl">{title}</h1><p className="mt-5 max-w-3xl text-lg leading-8 text-slate-300">{intro}</p></Container></section><main className="py-12 sm:py-16"><Container className="max-w-4xl"><div className="prose-content">{children}</div></Container></main></>; }
+export function LegalSection({ title, children }: { title: string; children: ReactNode }) { return <section className="border-b border-border py-7 first:pt-0 last:border-0"><h2 className="text-2xl font-bold tracking-tight">{title}</h2><div className="mt-3 space-y-4 text-sm leading-7 text-muted-foreground">{children}</div></section>; }
