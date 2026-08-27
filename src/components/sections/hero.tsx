@@ -1,6 +1,8 @@
 import { Building2, House, ShieldCheck, Wrench } from "lucide-react";
+import Image from "next/image";
 import { ButtonLink } from "@/components/ui/button-link";
 import { Container } from "@/components/layout/container";
+import { siteImages } from "@/data/images";
 
 const values = ["Domestic & Commercial", "Multiple Property Services", "Professional Service", "Quote Available"];
 
@@ -49,10 +51,12 @@ export function Hero() {
 
 function HeroVisual() {
   return (
-    <div className="hero-visual relative mx-auto min-w-0 w-full max-w-md lg:max-w-none" aria-label="Property service visual placeholder">
+    <div className="hero-visual relative mx-auto min-w-0 w-full max-w-md lg:max-w-none" aria-label={siteImages.hero.alt}>
       <div className="grid-pattern absolute inset-8 rounded-[2rem] opacity-40" aria-hidden="true" />
 
-      <div className="service-panel relative overflow-hidden rounded-[2rem] border border-slate-700 bg-slate-900/90 p-5 shadow-[0_30px_80px_rgba(15,23,42,0.55)] backdrop-blur-sm">
+      <div className="hero-image-panel service-panel relative overflow-hidden rounded-[2rem] border border-slate-700 bg-slate-900/90 p-5 shadow-[0_30px_80px_rgba(15,23,42,0.55)] backdrop-blur-sm">
+        {siteImages.hero.src && <Image src={siteImages.hero.src} alt="" fill priority sizes="(max-width: 1024px) 90vw, 45vw" className="hero-photo" />}
+        <div className="hero-photo-overlay" aria-hidden="true" />
         <div className="absolute -right-10 -top-10 size-32 rounded-full bg-sky-400/20 blur-3xl" aria-hidden="true" />
         <div className="absolute -bottom-8 left-8 size-28 rounded-full bg-cyan-500/10 blur-3xl" aria-hidden="true" />
 

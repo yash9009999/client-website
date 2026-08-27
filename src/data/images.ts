@@ -12,16 +12,17 @@ export const siteImages: {
   services: Record<Service["slug"], VisualAsset>;
 } = {
   hero: {
-    alt: "Abstract architectural window and property service visual",
+    src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1400&q=85",
+    alt: "Bright modern property exterior with large architectural windows",
     tone: "deep",
     label: "Property care, considered",
   },
   services: {
-    glazing: { alt: "Abstract architectural glazing visual", tone: "cool", label: "Glass & windows" },
-    locksmith: { alt: "Abstract secure entry visual", tone: "deep", label: "Secure access" },
-    plumbing: { alt: "Abstract water and pipework visual", tone: "water", label: "Water systems" },
-    "gas-heating": { alt: "Abstract heating system visual", tone: "warm", label: "Heat & comfort" },
-    electrical: { alt: "Abstract electrical installation visual", tone: "electric", label: "Power & light" },
-    "pest-control": { alt: "Abstract property protection visual", tone: "natural", label: "Property protection" },
+    glazing: { src: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=85", alt: "Sunlit office interior with expansive glass windows", tone: "cool", label: "Glass & windows" },
+    locksmith: { src: "https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=900&q=85", alt: "Close view of a secure modern front door", tone: "deep", label: "Secure access" },
+    plumbing: { src: "https://images.unsplash.com/photo-1607472586893-edb57bdc0e39?auto=format&fit=crop&w=900&q=85", alt: "Professional plumber working beneath a sink", tone: "water", label: "Water systems" },
+    "gas-heating": { src: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?auto=format&fit=crop&w=900&q=85", alt: "Radiator heating a comfortable modern room", tone: "warm", label: "Heat & comfort" },
+    electrical: { src: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=900&q=85", alt: "Electrician working on a property installation", tone: "electric", label: "Power & light" },
+    "pest-control": { src: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=900&q=85", alt: "Professional property maintenance worker", tone: "natural", label: "Property protection" },
   },
 };
